@@ -9,10 +9,6 @@
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
-/[Uu]ser[Ss]ettings/
-
-# Explicitly ignore all editor layout files (redundant but safe)
-UserSettings/Layouts/*.dwl
 
 # Unity lock file
 *.utmp
