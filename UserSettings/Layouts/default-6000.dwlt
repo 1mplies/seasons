@@ -441,7 +441,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Forst/Conifers [BOTD]/Sources/Textures
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -459,7 +459,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b0230000
     m_LastClickedID: 9136
-    m_ExpandedIDs: 0000000086b1000088b100008ab100008cb100008eb1000090b1000092b1000094b1000096b1000098b100009ab100009cb100009eb10000a0b10000a2b10000a4b10000a6b10000a8b10000aab10000acb10000aeb10000b0b10000
+    m_ExpandedIDs: 0000000006af000008af00000aaf00000caf00000eaf000010af000012af000014af000016af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -488,7 +488,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086b1000088b100008ab100008cb100008eb1000090b1000092b1000094b1000096b1000098b100009ab100009cb100009eb10000a0b10000a2b10000a4b10000a6b10000a8b10000aab10000acb10000aeb10000b0b10000
+    m_ExpandedIDs: 0000000006af000008af00000aaf00000caf00000eaf000010af000012af000014af000016af0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 212.52505, y: 33.648582, z: 59.16069}
+    m_Target: {x: 126.013275, y: 58.835728, z: 147.80728}
     speed: 2
     m_Value: {x: 212.52505, y: 33.648582, z: 59.16069}
   m_RenderMode: 0
@@ -1134,11 +1134,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.078422606, y: 0.7445484, z: -0.08887808, w: 0.65696234}
+    m_Target: {x: 0.3729994, y: 0.60633045, z: -0.38506436, w: 0.58733463}
     speed: 2
     m_Value: {x: 0.078422606, y: 0.7445484, z: -0.08887809, w: 0.65696234}
   m_Size:
-    m_Target: 58.550446
+    m_Target: 16.238142
     speed: 2
     m_Value: 58.550446
   m_Ortho:
