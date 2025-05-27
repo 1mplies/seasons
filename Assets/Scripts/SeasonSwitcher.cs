@@ -9,6 +9,8 @@ public class SeasonSwitcher : MonoBehaviour
 
     void Start()
     {
+        // Enable fog at start and set to summer level
+        RenderSettings.fog = true;
         SetSeason(true);
     }
 
@@ -25,5 +27,16 @@ public class SeasonSwitcher : MonoBehaviour
     {
         summerEnvironment.SetActive(summer);
         winterEnvironment.SetActive(!summer);
+
+        if (!summer)
+        {
+            RenderSettings.fogDensity = 0.015f; // winter fog density
+            RenderSettings.fogColor = new Color(0.8f, 0.85f, 0.9f); // light bluish fog
+        }
+        else
+        {
+            RenderSettings.fogDensity = 0.003f; // summer fog density (very low)
+            RenderSettings.fogColor = new Color(0.9f, 0.9f, 0.9f); // lighter fog color
+        }
     }
 }
