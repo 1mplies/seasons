@@ -8,10 +8,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 649165938051307759, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
+      propertyPath: m_Name
+      value: PT_Pine_Tree_03_green_autumn_LOD0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1394057832663195253, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 624ad5b81e0773a49bac0d5b8544c216, type: 2}
+    - target: {fileID: 1720328307436147672, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
+      propertyPath: m_Name
+      value: PT_Pine_Tree_03_green_autumn_LOD2
+      objectReference: {fileID: 0}
     - target: {fileID: 1870679391148259636, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
       propertyPath: m_LODs.Array.data[0].renderers.Array.data[0].renderer
       value: 
-      objectReference: {fileID: 1427766391070953622}
+      objectReference: {fileID: 7051863249203164177}
     - target: {fileID: 6117071349010126079, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
       propertyPath: m_Name
       value: PT_Pine_Tree_03_green Variant
@@ -56,13 +68,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8000319770140492376, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 624ad5b81e0773a49bac0d5b8544c216, type: 2}
+    - target: {fileID: 8169898343365794049, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
+      propertyPath: m_Name
+      value: PT_Pine_Tree_03_green_autumn_LOD1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
---- !u!23 &1427766391070953622 stripped
+--- !u!23 &7051863249203164177 stripped
 MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 7013654394060798706, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1394057832663195253, guid: d250af4848f51154f9a2bf6a85b60ac2, type: 3}
   m_PrefabInstance: {fileID: 8252266278557805156}
   m_PrefabAsset: {fileID: 0}
