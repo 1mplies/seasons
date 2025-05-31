@@ -2,41 +2,65 @@ using UnityEngine;
 
 public class SeasonSwitcher : MonoBehaviour
 {
+    public GameObject springEnvironment;
     public GameObject summerEnvironment;
+    public GameObject autumnEnvironment;
     public GameObject winterEnvironment;
 
-    private bool isSummer = true;
+    public Material springSkybox;
+    public Material summerSkybox;
+    public Material autumnSkybox;
+    public Material winterSkybox;
+
+    private enum Season { Spring, Summer, Autumn, Winter }
+    private Season currentSeason = Season.Spring;
 
     void Start()
     {
-        // Enable fog at start and set to summer level
         RenderSettings.fog = true;
-        SetSeason(true);
+        SetSeason(currentSeason);
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.T))
         {
-            isSummer = !isSummer;
-            SetSeason(isSummer);
+            // cycle through seasons
+            currentSeason = (Season)(((int)currentSeason + 1) % 4);
+            SetSeason(currentSeason);
         }
     }
 
-    void SetSeason(bool summer)
+    void SetSeason(Season season)
     {
-        summerEnvironment.SetActive(summer);
-        winterEnvironment.SetActive(!summer);
+        springEnvironment.SetActive(season == Season.Spring);
+        summerEnvironment.SetActive(season == Season.Summer);
+        autumnEnvironment.SetActive(season == Season.Autumn);
+        winterEnvironment.SetActive(season == Season.Winter);
 
-        if (!summer)
+        switch (season)
         {
-            RenderSettings.fogDensity = 0.015f; // winter fog density
-            RenderSettings.fogColor = new Color(0.8f, 0.85f, 0.9f); // light bluish fog
+            case Season.Spring:
+                RenderSettings.fogDensity = 0.005f;
+                RenderSettings.fogColor = new Color(0.6f, 0.8f, 0.6f); // soft greenish fog
+                RenderSettings.skybox = springSkybox;
+                break;
+            case Season.Summer:
+                RenderSettings.fogDensity = 0.003f;
+                RenderSettings.fogColor = new Color(0.9f, 0.9f, 0.9f); // light, bright fog
+                RenderSettings.skybox = summerSkybox;
+                break;
+            case Season.Autumn:
+                RenderSettings.fogDensity = 0.005f;
+                RenderSettings.fogColor = new Color(0.9f, 0.7f, 0.4f); // warm orange fog
+                RenderSettings.skybox = autumnSkybox;
+                break;
+            case Season.Winter:
+                RenderSettings.fogDensity = 0.018f;
+                RenderSettings.fogColor = new Color(0.8f, 0.85f, 0.9f); // cold bluish fog
+                RenderSettings.skybox = winterSkybox;
+                break;
         }
-        else
-        {
-            RenderSettings.fogDensity = 0.003f; // summer fog density (very low)
-            RenderSettings.fogColor = new Color(0.9f, 0.9f, 0.9f); // lighter fog color
-        }
+
     }
 }
