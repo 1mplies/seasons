@@ -51,7 +51,7 @@ public class SeasonSwitcher : MonoBehaviour
                 RenderSettings.skybox = summerSkybox;
                 break;
             case Season.Autumn:
-                RenderSettings.fogDensity = 0.005f;
+                RenderSettings.fogDensity = 0.009f;
                 RenderSettings.fogColor = new Color(0.9f, 0.7f, 0.4f); // warm orange fog
                 RenderSettings.skybox = autumnSkybox;
                 break;
