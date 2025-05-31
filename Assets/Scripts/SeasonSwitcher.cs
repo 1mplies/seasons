@@ -13,7 +13,7 @@ public class SeasonSwitcher : MonoBehaviour
     public Material winterSkybox;
 
     private enum Season { Spring, Summer, Autumn, Winter }
-    private Season currentSeason = Season.Spring;
+    private Season currentSeason = Season.Summer;
 
     void Start()
     {
